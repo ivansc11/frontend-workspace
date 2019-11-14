@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Arq3D logo" src="../assets/logo.png" />
+
     <div class="m-5 notification-bar d-flex justify-content-center">
       <b-alert
         :show="dismissCountDown"
@@ -125,6 +125,7 @@ export default {
 </script>
 
 <style  scoped>
+
 .dashboard-tab {
   border: 1px solid black;
   height: 10rem;

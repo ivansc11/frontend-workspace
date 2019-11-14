@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Dashboard</router-link> |
-      <router-link to="/profile">Perfil</router-link> |
-      <router-link to="/about">Proyectos</router-link> |
-      <router-link to="/notas">Chat</router-link> |
-      <router-link to="/notas">Log out</router-link>
+    <div id="nav" class="d-flex justify-content-between text-center ">
+      <img alt="Arq3D logo" class="m-3" src="./assets/logo.png" />
+      <div class="p-3">
+        <router-link class="align-middle" to="/">Dashboard</router-link> |
+        <router-link to="/profile">Perfil</router-link> |
+        <router-link to="/projects">Proyectos</router-link> |
+        <router-link to="/chat">Chat</router-link> |
+        <router-link to="/notas">Log out</router-link>
+      </div>
     </div>
     <router-view />
   </div>
@@ -20,9 +23,6 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
 
 #nav a {
   font-weight: bold;
@@ -31,5 +31,8 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+#nav img {
+  height: 100px;
 }
 </style>
